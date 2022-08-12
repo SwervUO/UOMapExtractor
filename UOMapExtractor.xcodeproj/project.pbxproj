@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		646FAC6428A66A6500DCEE5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 646FAC6328A66A6500DCEE5E /* main.cpp */; };
+		646FAC7628A66B2600DCEE5E /* uomap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 646FAC7128A66B2600DCEE5E /* uomap.cpp */; };
+		646FAC7728A66B2600DCEE5E /* mapblock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 646FAC7228A66B2600DCEE5E /* mapblock.cpp */; };
+		646FAC7828A66B2600DCEE5E /* uopfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 646FAC7428A66B2600DCEE5E /* uopfile.cpp */; };
+		646FAC7B28A66B2F00DCEE5E /* strutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 646FAC7928A66B2F00DCEE5E /* strutil.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,17 @@
 /* Begin PBXFileReference section */
 		646FAC6028A66A6500DCEE5E /* UOMapExtractor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UOMapExtractor; sourceTree = BUILT_PRODUCTS_DIR; };
 		646FAC6328A66A6500DCEE5E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		646FAC6A28A66AC200DCEE5E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		646FAC6E28A66B1000DCEE5E /* wf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wf.png; sourceTree = "<group>"; };
+		646FAC6F28A66B1000DCEE5E /* wf.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = wf.ico; sourceTree = "<group>"; };
+		646FAC7028A66B2600DCEE5E /* uomap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = uomap.hpp; sourceTree = "<group>"; };
+		646FAC7128A66B2600DCEE5E /* uomap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uomap.cpp; sourceTree = "<group>"; };
+		646FAC7228A66B2600DCEE5E /* mapblock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapblock.cpp; sourceTree = "<group>"; };
+		646FAC7328A66B2600DCEE5E /* mapblock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mapblock.hpp; sourceTree = "<group>"; };
+		646FAC7428A66B2600DCEE5E /* uopfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uopfile.cpp; sourceTree = "<group>"; };
+		646FAC7528A66B2600DCEE5E /* uopfile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = uopfile.hpp; sourceTree = "<group>"; };
+		646FAC7928A66B2F00DCEE5E /* strutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strutil.cpp; sourceTree = "<group>"; };
+		646FAC7A28A66B2F00DCEE5E /* strutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = strutil.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +56,8 @@
 		646FAC5728A66A6400DCEE5E = {
 			isa = PBXGroup;
 			children = (
+				646FAC6D28A66AFC00DCEE5E /* asset */,
+				646FAC6A28A66AC200DCEE5E /* .gitignore */,
 				646FAC6228A66A6500DCEE5E /* UOMapExtractor */,
 				646FAC6128A66A6500DCEE5E /* Products */,
 			);
@@ -57,9 +74,42 @@
 		646FAC6228A66A6500DCEE5E /* UOMapExtractor */ = {
 			isa = PBXGroup;
 			children = (
+				646FAC6C28A66ADD00DCEE5E /* utility */,
+				646FAC6B28A66AD500DCEE5E /* uodata */,
 				646FAC6328A66A6500DCEE5E /* main.cpp */,
 			);
 			path = UOMapExtractor;
+			sourceTree = "<group>";
+		};
+		646FAC6B28A66AD500DCEE5E /* uodata */ = {
+			isa = PBXGroup;
+			children = (
+				646FAC7228A66B2600DCEE5E /* mapblock.cpp */,
+				646FAC7328A66B2600DCEE5E /* mapblock.hpp */,
+				646FAC7128A66B2600DCEE5E /* uomap.cpp */,
+				646FAC7028A66B2600DCEE5E /* uomap.hpp */,
+				646FAC7428A66B2600DCEE5E /* uopfile.cpp */,
+				646FAC7528A66B2600DCEE5E /* uopfile.hpp */,
+			);
+			path = uodata;
+			sourceTree = "<group>";
+		};
+		646FAC6C28A66ADD00DCEE5E /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				646FAC7928A66B2F00DCEE5E /* strutil.cpp */,
+				646FAC7A28A66B2F00DCEE5E /* strutil.hpp */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		646FAC6D28A66AFC00DCEE5E /* asset */ = {
+			isa = PBXGroup;
+			children = (
+				646FAC6F28A66B1000DCEE5E /* wf.ico */,
+				646FAC6E28A66B1000DCEE5E /* wf.png */,
+			);
+			path = asset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +140,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "Charles Kerr";
 				TargetAttributes = {
 					646FAC5F28A66A6500DCEE5E = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -119,6 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646FAC7828A66B2600DCEE5E /* uopfile.cpp in Sources */,
+				646FAC7B28A66B2F00DCEE5E /* strutil.cpp in Sources */,
+				646FAC7628A66B2600DCEE5E /* uomap.cpp in Sources */,
+				646FAC7728A66B2600DCEE5E /* mapblock.cpp in Sources */,
 				646FAC6428A66A6500DCEE5E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
